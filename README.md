@@ -17,17 +17,38 @@ A copy of the original data can be found [here.](https://github.com/sever1sd/ele
 ### The Analysis
 The analysis was performed using a script using the programming language Python and the code editing program Visual Studio Code. The script was designed to aggregate votes by candidate and county. Then it determined the winner by identifying candidate had the most votes.
 
-#### <ins>Script Breakdown
+#### <ins>**Script Breakdown**
 
-Initializing Variables:
+*Initializing Variables:*
 
-Counting Votes:
+This segment of code imports dependencies, sets variables to open files and calculate vote counts, and creates lists and dictionaries for loops. 
 
-Determining County Winner:
+![alt text](https://github.com/sever1sd/election_analysis/blob/913de6e16c01ea38e19214c412905d6d024c012e/Resources/Import%20and%20Variable%20Initializing.png)
 
-Determining Candidate Winner:
+*Counting Votes:*
 
-Code Output:
+This segment of code utilizes a for loop to iterate through the data and add candidate and county names to a list. For each instance a unique county or candidate name occurs, a vote is tallied.
+
+![alt text](https://github.com/sever1sd/election_analysis/blob/913de6e16c01ea38e19214c412905d6d024c012e/Resources/Counting%20Votes.png)
+
+*Determining County Winner:*
+
+This segment of code utilizes a for loop to iterate through the dictionary created for the county, retrieve the votes for that county, and calculate the winning total and percentages. It also prints the results to the terminal and saves the results to a text file.
+
+![alt text](https://github.com/sever1sd/election_analysis/blob/1818c206d814c95e96194e81207b98ab778faf74/Resources/Finds%20County%20votes.png)
+
+*Determining Candidate Winner:*
+
+This segment of code is similar to the county winner code. It also utilizes a for loop to iterate through the dictionary created for the candidates, retrieve the votes for each candidate, and calculates the winning total and percentages. It also prints the results to the terminal and saves the results to a text file.
+
+![alt text](https://github.com/sever1sd/election_analysis/blob/1818c206d814c95e96194e81207b98ab778faf74/Resources/Find%20Candidate%20Votes.png)
+
+*Code Output:*
+
+This is the election result output in the terminal once the script is run.
+
+![alt text](https://github.com/sever1sd/election_analysis/blob/1818c206d814c95e96194e81207b98ab778faf74/Resources/VS%20Code%20output.png)
+
 
 A copy of the script can be found [here.](https://github.com/sever1sd/election_analysis/blob/51d3ba5176f3b8d00dd99a16275cc9bcc104151d/PyPoll_Challenge.py)
 
@@ -62,7 +83,8 @@ The final talley of the election results were written onto a text file and saved
         * Vote Percentage: 6.7%
 
 <ins>**A screenshot of the text file output:**
-![alt text]()
+
+![alt text](https://github.com/sever1sd/election_analysis/blob/1818c206d814c95e96194e81207b98ab778faf74/Resources/text%20output.png)
 
 ## Audit Summary
 This script was beneficial in auditing the local election because it was able to quickly and reliably aggregate and analyze the data. Due to the speed and accuracy of this audit, it is recommended that future election audits be conducted similarly. The script utilized for this audit can also be used in future election audits with minor modifications or expanded for more robust analyses.
